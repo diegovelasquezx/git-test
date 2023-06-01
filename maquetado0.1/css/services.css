@@ -1,0 +1,53 @@
+h2{
+    padding: 5% 0%;
+    background-image: linear-gradient(rgb(0, 187, 255), rgb(100, 36, 203));
+}
+
+.box-service p{
+    text-align: justify;
+}
+
+.box-service img{
+    width: 100%;
+    height: 280px;
+    transition: transform 1s;
+}
+
+.box-service img:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.container-services{
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.combinado{
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+@media only screen and (max-width: 768px){
+    .container-services{
+        grid-template-columns: auto auto;
+        gap: 50px 20px;
+    }
+    .combinado{
+        grid-column: 1 / span 2;
+        grid-row: auto;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .container-services{
+        grid-template-columns: auto;
+        gap: 50px 0px;
+    }
+    .combinado{
+        grid-column: auto;
+        grid-row: auto;
+    }
+}

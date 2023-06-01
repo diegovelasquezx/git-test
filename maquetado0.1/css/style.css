@@ -1,0 +1,255 @@
+/* Estos son mis estilos en css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 45px, 0px, 45px, 0px;
+}
+
+.logo img{
+    width: 80px;
+    height: 120px;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-nav{
+    /* width: 50%; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(82, 31, 95);
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    padding: 0px 25px 0px 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.menu a:hover{
+    color: rgb(0, 255, 242);
+}
+
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+
+.social-media i{
+    padding: 25px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.social-media i:hover{
+    color: rgb(0, 255, 242);
+}
+
+.social-media{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    background-image: url(../img/hero.png);
+    width: 100%;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero h1{
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.26);
+    padding: 20px;
+}
+
+@font-face {
+    font-family: fuente-gamer;
+    src: url(../fonts/spotyfied-me.ttf);
+}
+
+.gamers{
+    padding: 0px 10px 0px 10px;
+    font-family: fuente-gamer;
+}
+
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+}
+
+.background-section-1{
+    background-image: linear-gradient(rgb(100, 36, 203), rgb(0, 187, 255));
+}
+
+.first-box{
+    display: flex;
+    padding: 5%;
+}
+
+.first-box img{
+    width: 50%;
+    padding: 2%;
+}
+
+.first-box p{
+    padding: 2%;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.first-box h4{
+    padding: 2%;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.background-section-2{
+    background-color: rgb(0, 187, 255);
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 0px 25px 0px 25px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h4{
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.img-desktop{
+    display: block;
+}
+
+.container-nav{
+    width: 80%;
+    display: flex;
+}
+.icono-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        background-color: rgb(82, 31, 95);
+
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .hero{
+        height: 250px;
+        background-position: left center;
+    }
+    .first-box{
+        display: block;
+    }
+    .first-box img{
+        width: 100%;
+        padding: 0px;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .img-desktop{
+        display: none;
+    }
+    /* menu mobile */
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color: rgb(82, 31, 95);
+        transition: 1s ease top;
+    }
+    .container-nav-2{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 116px;
+        background-color: rgb(82, 31, 95);
+    }
+    .icono-menu{
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .header{
+        flex-wrap: wrap;
+    }
+}
+
+
+

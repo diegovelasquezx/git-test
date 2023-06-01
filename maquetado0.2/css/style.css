@@ -1,0 +1,395 @@
+/* Estos son mis estilos en css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+section{
+    padding: 45px, 0px, 45px, 0px;
+}
+
+.logo img{
+    width: 130px;
+    height: 90px;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.logo img{
+    width:35%;
+    object-fit: cover;
+    animation: move 1.5s linear infinite;
+}
+
+@keyframes move {
+    0%,
+    100%{
+        border-radius: 
+        40% 60% 70% 10% /
+        40% 40% 30% 50%;
+    }
+    34%{
+        border-radius: 
+        70% 30% 90% 50% /
+        30% 30% 70% 70%;
+    }
+}
+.menu-nav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background: rgb(72,68,154);
+    background: linear-gradient(90deg, rgba(72,68,154,1) 6%, rgba(122,69,160,1) 50%, rgba(72,128,139,1) 100%);
+    }
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu a{
+    padding: 0px 25px 0px 25px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    
+}
+ul {
+    list-style: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu li {
+    margin-right: 70px;
+  }
+  
+  .menu a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .menu a span {
+    transition: transform 0.2s ease-out;
+  }
+  
+  .menu a span:first-child {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .menu a span:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu i {
+    font-size: 20px;
+  }
+  
+  .menu a:hover span:first-child {
+    transform: translateY(100%);
+  }
+  
+  .menu a:hover span:last-child,
+  .menu[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+  
+  .menu[data-animation="entrar"] a span:last-child {
+    transform: translateX(-150%);
+  }
+  
+  .menu[data-animation="entrar"] a:hover span:first-child {
+    transform: translateX(150%);
+  }
+
+.menu a:hover {
+    /* color:#161413; */
+    color: #ffffff;
+}
+.menu[data-animation] a:hover span:last-child {
+    transform: none;
+  }
+
+.menu-social ul{
+    list-style: none;
+    display: flex;
+}
+
+.social-media i{
+    padding: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    transition: transform .2s;
+    display: flex;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .social-media i:hover{
+   color: rgba(69, 95, 197, 0.635);
+   transform: scale(1.5);
+} */
+.social-media{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.coloresf{
+    background:radial-gradient(circle at 50% -20.71%, #a3a7ff 0, #7a8ffc 25%, #3c78f2 50%, #0063e8 75%, #0051de 100%);
+    height: 2px;
+    width: 2px;
+    margin-top: 30%;
+    align-items: center;
+    border-radius: 5px;
+}
+.coloresi{
+    background: radial-gradient(circle at 50% -20.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);
+    height: 2px;
+    width: 2px;
+    margin-top: 30%;
+    align-items: center;
+    border-radius: 5px;
+}
+.colorest{
+    background:linear-gradient(180deg, #a5d9f4 0, #6cb4d8 50%, #1d90bd 100%);
+    height: 2px;
+    width: 2px;
+    margin-top: 30%;
+    align-items: center;
+    border-radius: 5px;
+}
+.coloresf:hover, .coloresi:hover, .colorest:hover {
+    transform: scale(1.5);
+}
+.hero{
+    background-image: url(../img/universo3.jpg);
+    width: 100%;
+    height: 490px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero h1{
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.26);
+    padding: 20px;
+}
+
+.third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+@font-face {
+    font-family: fuente-gamer;
+    src: url(../fonts/spotyfied-me.ttf);
+}
+
+.gamers{
+    padding: 0px 10px 0px 10px;
+    font-family: fuente-gamer;
+}
+
+.title-secondary{
+    text-align: center;
+    font-size: 40px;
+}
+
+.background-section-1{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.first-box{
+    display: flex;
+    padding: 5%;
+}
+
+.first-box img{
+    width: 50%;
+    padding: 2%;
+}
+
+.first-box p{
+    padding: 2%;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.first-box h4{
+    padding: 2%;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.background-section-2{
+    background-color: rgb(0, 187, 255);
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 0px 25px 0px 25px;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h5{
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.img-desktop{
+    display: block;
+
+}
+.container-nav{
+    width: 80%;
+    display: block;
+    position: absolute;
+    top: -200px;
+    background-color: rgb(200, 233, 123);
+
+}
+
+.container-nav-2{
+    width: 80%;
+    display: block;
+    position: absolute;
+    top: 116px;
+    background-color: rgb(200, 233, 123);
+
+}
+.icono-menu{
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: center;
+        z-index: 999;
+        background-color: rgb(52, 240, 199);
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .hero{
+        height: 250px;
+        background-position: left center;
+    }
+
+    .first-box{
+        display: block;
+    }    
+
+    .first-box img{
+        width: 100%;
+        padding: 0%;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+    /*container.mobail*/
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color: burlywood;
+        transition: 1% ease-top; 
+    }
+    }
+
+@media only screen and (max-width: 550px){
+    .header{
+        flex-wrap: wrap;
+    }
+
+}
+

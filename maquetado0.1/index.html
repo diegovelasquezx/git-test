@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ-Technology</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300&family=Noto+Serif+Tamil:wght@100&family=Sassy+Frass&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo de la empresa">
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hambuerguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="vistas/servicios.html">Servicios</a></li>
+                    <li><a href="vistas/contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>AJ-Technology <span class="gamers">GAMERS</span></h1>
+    </div>
+    <section class="background-section-1">
+        <h2 class="title-secondary">Lo mejor en el ambito <span class="gamers">GAMERS</span></h2>
+        <div class="first-box">
+            <img data-aos="fade-up-right" src="img/compu-gamer-1.jpg" alt="computadoras en escritorio">
+            <div>
+                <h4 class="animate__animated animate__pulse animate__infinite">Titulo descriptivo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolore sit similique et saepe impedit, modi commodi. Architecto 
+                    doloremque optio, sit nisi a quaerat cupiditate dolore distinctio ea obcaecati, enim officiis.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="background-section-2">
+        <h2 class="title-secondary">Lo mejor en el ambito <span class="gamers">GAMERS</span></h2>
+        <div class="first-box">
+            <img data-aos="fade-right" class="img-mobile" src="img/compu-gamer-2.jpg" alt="computadoras en escritorio">
+            <div>
+                <h4>Titulo descriptivo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolore sit similique et saepe impedit, modi commodi. Architecto 
+                    doloremque optio, sit nisi a quaerat cupiditate dolore distinctio ea obcaecati, enim officiis.
+                </p>
+            </div>
+            <img data-aos="fade-right" data-aos-duration="3000" class="img-desktop" src="img/compu-gamer-2.jpg" alt="computadoras en escritorio">
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo de la empresa">
+        </div>
+        <div class="info">
+            <h4>AJ-Technology</h4>
+            <h4>San Salvador, El Salvador C.A</h4>
+            <h4>info-ajtechnology@ajtechnology.com</h4>
+        </div>
+        <div class="social-media">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const menu = document.getElementById('menu-mobile');
+
+        const movimiento = document.getElementById('menu-movimiento');
+
+        const icono = document.getElementById('icono-hambuerguesa');
+
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            }else{
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    </script>
+</body>
+</html>

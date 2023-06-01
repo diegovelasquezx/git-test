@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6x1 mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Logo del sitio web-->
+                    <a href="index.html" class="flex items-center py-4 px-2">
+                        <img src="/img/Logozelda1.png" class="h-16 w-20 mr" alt="logo zelda">
+                        <span class="font-semibold text-gray-500 hover:text-red-500" class="Zelda"></span>
+                    </a>
+                </div>
+                <!--nav-bar primario-->
+                <div class="hidden md:flex items-center space-x-1">
+                    <ul class="flex">
+                        <li>          
+                            <a href="" class="py-4 text-gray-500 font-semibold hover:text-red-500">Inicio</a>
+                        </li>
+                        <li>          
+                            <a href="" class="py-4 text-gray-500 font-semibold hover:text-red-500">Servicios</a>
+                        </li>
+                        <li>          
+                            <a href="" class="py-4 text-gray-500 font-semibold hover:text-red-500">Nosotros</a>
+                        </li>
+                        <li>          
+                            <a href="" class="py-4 text-gray-500 font-semibold hover:text-red-500">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            <!--Nav-bar secundary-->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-red-600 hover:text-white">Ingresar</a>
+                <a href="" class="py-2 px-2 font-medium text-white-500 rounded bg-red-600">Registrarse</a>
+            </div>
+            <!--Botton de menu mobile-->
+            <div class="flex md-hidden items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-6 h-6 text-gray-500 hover:text-red-500" fill="none" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentcolor">
+                        <path d="M4 ch16m4 12h16m4 10h10"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+       <!--menu-mobile-->
+        <div class="hidden mobile-menu absolute t-50 bg-white w-full z-50">
+            <ul>
+                <li>
+                    <a href="index.html" class="block text-sm px-2 py-4 font-semibold">Inicio</a>
+                </li>
+                <li>
+                    <a href="" class="block text-sm px-2 py-4">Servicios</a>
+                </li>
+                <li>
+                    <a href="" class="block text-sm px-2 py-4">Nosotros</a>
+                </li>
+                <li>
+                    <a href="" class="block text-sm px-2 py-4">Contactos</a>
+                </li>
+
+            </ul>
+
+        </div> 
+    </nav>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("Click", () => (
+            menu.classList.toggle("hidden")
+        ));
+    </script>
+    
+</body>
+</html>

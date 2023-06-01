@@ -1,0 +1,193 @@
+.box-service{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-service i{
+    width: 50%;
+    font-size: 75px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.box-service{
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+
+}
+
+.container-services{
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+
+}
+
+fa-location-dot.hover{
+    color: rgb(235, 72, 72);
+}
+
+fa-whatsapp.hover{
+    color: rgb(40, 165, 51);
+}
+
+fa-phone.hover{
+    color: rgb(156, 68, 228);
+}
+
+fa-envelope.hover{
+    color: rgb(69, 216, 172);
+}
+.box-service i {
+    width: 50%;
+    font-size: 75px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.box-service h4 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
+
+.contactos-box {
+    background-color: blue;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mapa-box {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    padding: 10px;
+    width: 40%;
+}
+.formulario h4{
+    padding: 10px  0px;
+    font-weight:bolder ;
+    font-size: 20 px;
+    
+}
+.formulario  input, textarea{
+    background-color: antiquewhite;
+    border: 1px solid  #fff ;
+    width: 100%;
+    border-radius: 25px;
+    margin: 15px 0px;
+    padding: 3%;
+    color: #000000;
+    font-weight: 900;
+}
+.mapa-box{
+    width: 60%;
+}
+.formulario input.focus, textarea:focus{
+    outline: none;
+    border: 2px solid rgb(63, 225, 236);
+    box-shadow: 0px 0px 8px rgb(63, 225, 236);
+
+}
+.btn-form{
+    background-color: blueviolet;
+    color: #fff;
+    font-weight: bolder;
+    padding: 3% 5%;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+}
+.btn-form.hover{
+    background-color: rgb(42, 228, 88);
+
+}
+
+@media only screen and (max-width: 768px){
+    .logo{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        background-color: #000;
+    }
+    .menu-nav{
+        width: 100%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .hero{
+        height: 250px;
+        background-position: left center;
+    }
+
+    .first-box{
+        display: block;
+    }    
+
+    .first-box img{
+        width: 100%;
+        padding: 0%;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+    /*container.mobail*/
+    .container-nav{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: -200px;
+        background-color: burlywood;
+        transition: 1% ease-top; 
+    }
+    .container-services{
+        width: 100%;
+        display: block;
+        flex-wrap: wrap;
+        position: absolute;
+        background-color: bisque;
+        align-items: center;
+    }
+    }
+    .mapa-box{
+        display: block;
+        position: absolute;
+        align-items: center;
+
+    }
+    
+
+@media only screen and (max-width: 550px){
+    .header{
+        flex-wrap: wrap;
+    }
+
+}
+
+
